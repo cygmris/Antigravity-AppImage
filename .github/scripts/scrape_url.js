@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
     });
     const page = await browser.newPage();
 
-    await page.goto('https://antigravity.google/download', {
+    await page.goto('https://antigravity.google/download#antigravity-ide', {
       waitUntil: 'networkidle0',
       timeout: 60000
     });

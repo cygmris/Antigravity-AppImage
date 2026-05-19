@@ -4,7 +4,7 @@ Type=Application
 Name=Antigravity
 GenericName=Google Antigravity
 Comment=Google Antigravity Agentic IDE
-Exec=antigravity --unity-launch %F
+Exec=antigravity-ide --unity-launch %F
 Icon=antigravity
 Categories=TextEditor;Development;IDE;
 StartupWMClass=Antigravity
@@ -15,5 +15,5 @@ Actions=new-empty-window;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
-Exec=antigravity --new-window %F
+Exec=antigravity-ide --new-window %F
 Icon=antigravity

@@ -34,7 +34,6 @@ The AppImage is built from the .tar.gz Antigravity package by GitHub Continuous 
 bash script https://github.com/valicm/appimage-bash.
 
 #### Auto-Update
-This repository includes an automated workflow that checks for updates daily.
+This repository includes an automated workflow that checks for updates weekly.
 - **Scraping**: A script checks the official download page for the latest Linux tarball.
 - **Automation**: If a new version is found, the release workflow is automatically updated and triggered to build the new AppImage.
-

@@ -13,11 +13,14 @@ const puppeteer = require('puppeteer');
       timeout: 60000
     });
 
-    const selector = '.platform-column';
+    const selector = '#antigravity-ide';
     await page.waitForSelector(selector, { timeout: 10000 });
 
     const downloadUrl = await page.evaluate(() => {
-      const columns = Array.from(document.querySelectorAll('.platform-column'));
+      const ideSection = document.getElementById('antigravity-ide');
+      if (!ideSection) return null;
+
+      const columns = Array.from(ideSection.querySelectorAll('.platform-column'));
       const linuxColumn = columns.find(c => {
         const title = c.querySelector('.platform-title')?.innerText.trim();
         return title && title.toLowerCase() === 'linux';
